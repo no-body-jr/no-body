@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICOF GLOBAL UNVERSITY COLLEGE</title> 
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<style>
+/*start of the body tag*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+/*end of the body tag*/
+
+
+
+
+
+
+/* start of the nav Bar */
+
+.header{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/icof-graduate.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.ourpartnervh{
+    min-height: 7vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(5, 8, 22),rgb(37, 62, 172));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    right: 0;
+}
+.ourpartner{
+    background-color: transparent;
+    padding: 5px;
+    position: relative;
+    z-index: 2200;
+}
+.ourpartner ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.ourpartner ul li{
+    position: relative;   
+}
+.ourpartner ul li h3 {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    font-size: 13px;
+    
+}
+nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    animation: nav-animate 2s ease;
+}
+@keyframes nav-animate{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+nav .logo img {
+    width: 190px;
+}
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+nav .menu li {
+    position: relative;
+}
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+}
+nav .menu li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f4ca4c;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+nav .menu li:hover::after{
+    width: 100%;
+}
+nav .menu a:hover {
+    box-shadow: 0 0 8px #f4ca4c, 0 0 8px #f4ca4c;
+    border-radius: 10px;
+}
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 10px;
+    border: 2px solid #f4ca4c;
+    backdrop-filter: blur(10px);
+    width: 170px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+nav .dropdown-content a {
+    padding: 10px;
+    color: white;
+}
+nav .dropdown-content a:hover {
+    background-color: #231349;
+}
+nav .menu-toggle {
+    display: none;
+    background-image: url(images/hamburger.jpeg);
+    padding: 15px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 35px;  
+    border-radius: 5px;
+}
+nav .menu-toggle .bar {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+@media (max-width: 950px) {
+
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 70%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        background-color: #fff;
+        padding: 10px;
+    }
+    nav .menu li {
+        width: 100%;
+        text-align: center;
+    }
+    nav .menu-toggle {
+        display: block;
+    }
+    nav .menu.open {
+        display: flex;
+        z-index: 12;
+        background: transparent;
+        backdrop-filter: blur(40px);
+    }
+    nav .menu a {
+        padding: 15px;
+    }
+    .header{
+    min-height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/icof-graduate.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+    nav .dropdown-content {
+        position: static;
+        width: 100%;
+    }
+    nav .dropdown-content a {
+        text-align: left;
+    }
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+/* end of the nav bar*/
+
+
+/*accommodation system*/
+
+  .accommdationvh {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+ 
+  
+}
+
+.tile {
+  width: 800px;
+  height: 400px;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.6;
+  text-align: center;
+  
+}
+.tile a{
+    background: #235eac;
+    margin: 20px;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: .5s;
+}
+.tile a:hover{
+    letter-spacing: 0.2em;
+}
+@media(max-width: 654px){
+  .tile{
+    overflow-y: scroll;
+  }
+}
+
+
+
+
+
+/*start of the footer*/
+
+.footervh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.808),rgb(50, 64, 133), rgb(0,0,0));
+    background-position: center;
+    background-size: cover;
+    bottom: 0;
+}
+
+.footer-row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.footer-col:nth-child(2), .footer-col:nth-child(3){
+    flex-basis: 20%;
+}
+.footer-logo{
+    width: 200px;
+    margin-bottom: 30px;
+}
+.footer-col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    color: #fff;
+    border-bottom: 1px solid #f4ca4c;
+}
+.footer-col h4{
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+    color: #fff;
+    
+}
+.footer-col p{
+    color: #fff;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #f4ca4c;
+    margin: 20px 0;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form ion-icon{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    font-size: 17px;
+    border: 0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer; 
+    margin-right: 10px;
+}
+form button ion-icon{
+    font-size: 16px;
+    color: #fff;
+   
+}
+.social-icons a ion-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #FFF;
+    background: transparent;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.copyright{
+    text-align: center;
+    color: #fff;
+}
+@media(max-width:760px){
+    .footervh{
+        bottom: unset;
+    }
+    .footer-col{
+        flex-basis: 100%;
+        
+    }
+        .footer-col:nth-child(2), .footer-col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
+
+</style>
+<body>
+
+   <!--the "welcome to icof, h1, p-tag and button" tab starts here-->
+   <div class="ourpartnervh">
+    <div class="ourpartner">
+        <ul>
+            <li>
+                <h3 class="ourpartner">tel: 123 456 7890</h3>
+                <h3 class="ourpartner">mon-fri 8am - 5pm</h3>
+                <h3 class="ourpartner">Email: icof@gmail.com</h3>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<section class="header">
+
+    
+    <!--the nav starts here-->
+    <nav>
+        <div class="logo">
+            <img src="images/VLCA4144.PNG" alt="Logo">
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="v-chanceller.html">Vice Chancellor</a>
+                    <a href="chanceller.html">ICOF CSU Chancellor</a>
+                    <a href="council.html">ICOF CSU Council</a>
+                    <a href="A-office.html">Academic Office</a>
+                    <a href="dean-of-students.html">Dean of Students</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#students">Students</a>
+                <div class="dropdown-content">
+                    <a href="a-calendar.html">Academic Calendar</a>
+                    <a href="login.php">E-Learning</a>
+                    <a href="./admin/login.php">Lecturer</a>
+                    <a href="accommodation.html">Accommodation System</a>
+                    <a href="student-life.html">Student Life</a>
+                  
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="schools.html">Schools</a>
+            </li>
+            <li class="dropdown">
+                    <a href="./icof-library/Library_Section.html">Library</a>
+            </li>
+            
+        </ul>
+        <!-- Hamburger Icon for Mobile View -->
+        <button class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+    <!--the end of the nav bar-->
+
+
+  <div class="accommdationvh">
+      <div class="tile">
+        <h1>Our Accommodation System</h1>
+        <p>Our accommodation system at the university 
+            offers a variety of housing options to suit
+            the diverse needs of our students. Whether 
+            you're looking for on-campus housing close to 
+            academic buildings or off-campus apartments with 
+            a more independent lifestyle, we have something 
+            for everyone. With modern facilities, affordable
+              pricing, and a safe living environment, students
+              can focus on their studies without worrying 
+              about accommodation. Our dedicated support team
+                is always available to assist with any 
+                housing-related inquiries and ensure a smooth 
+                experience from move-in to move-out.
+            
+            
+                <p>The accommodation system at our university is designed to provide students with comfortable, convenient, and affordable housing options that cater to different needs and preferences. The university offers a range of on-campus residences, including shared dormitories, single rooms, and apartment-style living. These accommodations are strategically located near academic buildings, libraries, and recreational facilities, ensuring that students have easy access to essential services and a conducive environment for learning.</p>
+
+                <p>To accommodate diverse student preferences, the university provides both catered and self-catered housing options. Catered residences offer meal plans that save students time and effort, while self-catered accommodations come with fully equipped kitchens for those who prefer cooking their own meals. Additionally, the accommodation system includes specialized housing for international students, postgraduate students, and students with disabilities, ensuring inclusivity and support for different groups.</p>
+                
+                <p>Security and student well-being are top priorities in the university’s accommodation system. Residences are equipped with 24/7 security, CCTV surveillance, and secure entry systems to ensure safety. Moreover, residential staff and wardens are available to assist students with any concerns they may have, offering guidance and fostering a sense of community. Many accommodations also feature common areas, study spaces, and recreational facilities that encourage social interaction and help students build lasting friendships.</p>
+                
+                <p>The university also offers off-campus housing support for students who prefer to live independently. A dedicated housing office provides resources, guidance, and listings of verified rental options in the surrounding area. Additionally, students can access advice on tenancy agreements, budgeting, and housing rights, ensuring they make informed decisions. Overall, the accommodation system at our university is designed to enhance student life by offering safe, comfortable, and supportive living environments.</p>
+                <a href="#">Apply for Accommodation</a>
+      </div>
+  </div>
+
+
+  <!--the start of the footer bar-->
+
+  <div class="footervh">
+        
+    <div class="footer-row">
+        <div class="footer-col">
+            <img src="images/VLCA4144.PNG" class="footer-logo">
+            <p>We are a 21st century movement of Christian Colleges
+                 and Universities working together to provide quality
+                  education</p>
+        </div>
+        <div class="footer-col">
+            <h3>OFFICE</h3>
+            <p>Olympia Extension Plot Number 1789/9</p>
+            <p>P.O. BOX 34490 LUSAKA, ZAMBIA </p>
+            <P class="email-id">cm@icofafrica.net</P>
+            <h4>+260 12 345 6789</h4>
+        </div>
+        <div class="footer-col">
+            <h3>LINKS</h3>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="student-life.html">Student life</a></li>
+                <li><a href="schools.html">Schools</a></li>
+                <li><a href="partners.html">Partners</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" placeholder="Enter email id" required>
+                <button type="submit"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+            </form>
+            <div class="social-icons">
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+        </div>                
+    </div>
+    <p class="copyright">ICOF GLOBAL UNIVERSITY &copy; 2025 - All Rights Reserved</p> 
+</div>
+
+
+
+
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.querySelector('.menu');
+    
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('open');
+    });
+</script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>

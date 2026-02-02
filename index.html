@@ -1,0 +1,1954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICOF GLOBAL UNVERSITY COLLEGE</title> 
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<style>
+/*start of the body tag*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+/*end of the body tag*/
+
+
+
+
+
+
+/* start of the nav Bar */
+
+.header{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/icof-graduate.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.ourpartnervh{
+    min-height: 7vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(5, 8, 22),rgb(37, 62, 172));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    right: 0;
+}
+.ourpartner{
+    background-color: transparent;
+    padding: 5px;
+    position: relative;
+    z-index: 2200;
+}
+.ourpartner ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.ourpartner ul li{
+    position: relative;   
+}
+.ourpartner ul li h3 {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    font-size: 13px;
+    
+}
+nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    animation: nav-animate 2s ease;
+}
+@keyframes nav-animate{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+nav .logo img {
+    width: 190px;
+}
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+nav .menu li {
+    position: relative;
+}
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+}
+nav .menu li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f4ca4c;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+nav .menu li:hover::after{
+    width: 100%;
+}
+nav .menu a:hover {
+    box-shadow: 0 0 8px #f4ca4c, 0 0 8px #f4ca4c;
+    border-radius: 10px;
+}
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 10px;
+    border: 2px solid #f4ca4c;
+    backdrop-filter: blur(10px);
+    width: 170px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+nav .dropdown-content a {
+    padding: 10px;
+    color: white;
+}
+nav .dropdown-content a:hover {
+    background-color: #231349;
+}
+nav .menu-toggle {
+    display: none;
+    background-image: url(images/hamburger.jpeg);
+    padding: 15px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 35px;  
+    border-radius: 5px;
+}
+nav .menu-toggle .bar {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+@media (max-width: 950px) {
+
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 70%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        background-color: #fff;
+        padding: 10px;
+    }
+    nav .menu li {
+        width: 100%;
+        text-align: center;
+    }
+    nav .menu-toggle {
+        display: block;
+    }
+    nav .menu.open {
+        display: flex;
+        z-index: 12;
+        background: transparent;
+        backdrop-filter: blur(40px);
+    }
+    nav .menu a {
+        padding: 15px;
+    }
+    .header{
+    min-height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/icof-graduate.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+    nav .dropdown-content {
+        position: static;
+        width: 100%;
+    }
+    nav .dropdown-content a {
+        text-align: left;
+    }
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+/* end of the nav bar*/
+
+
+
+
+
+
+/*the start of the ribbon for news*/
+
+        
+        .news-ribbon {
+            position: relative;
+            width: 100%;
+            background: transparent;
+            color: white;
+            font-size: 16px;
+            padding: 10px 0;
+            overflow: hidden;
+            text-align: center;
+            margin-top: 400px;   
+        }
+        .news-ribbon ul {
+            display: flex;
+            justify-content: space-around;
+            animation: slide 25s linear infinite;
+        }
+        .news-ribbon li {
+            flex: 0 0 auto;
+            padding: 10px;
+            list-style: none;
+        }
+        .news-ribbon li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .news-ribbon li .UNI-NEWS{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+            padding-inline: 5px;
+        }
+        /* Responsive text for screen */
+        @media (max-width: 768px) {
+            .news-ribbon {
+                font-size: 14px;
+                margin-top: 570px;
+            }
+            .news-ribbon li {
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            }
+            .news-ribbon li:hover {
+                background-color: #231349;
+                cursor: pointer;
+            }
+        }
+        @media (max-width: 480px) {
+            .news-ribbon {
+                font-size: 12px;
+                margin-top: 550px;
+            }
+            .news-ribbon li {
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            }
+            .news-ribbon li:hover {
+                background-color: #231349;
+                cursor: pointer;
+            }
+        }
+        /* Animation for news section */
+        @keyframes slide { 
+            0%   {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-290%);    
+            }
+        }
+        
+        .news-ribbon li {
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+        .news-ribbon li:hover {
+            background-color: #231349;
+            cursor: pointer;
+        }
+        @media (max-width:480px){
+            body{
+                overflow-x: hidden;
+            }
+        }
+
+/*end of the ribbon for news*/
+
+
+
+
+
+
+/*start of the "welcome to icof" p-tag and buttuns*/
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    margin-top: 50px;
+    font-size: 52px;
+    border-bottom: 3px solid #f4ca4c;
+    animation: head1 2s ease;
+}
+@keyframes head1{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.our-partners{
+    font-size: 20px;
+    background-color: rgb(37, 62, 172);   
+    text-align: center;
+    color: #fff;
+}
+
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+    animation: p-tag 2s ease;
+    line-height: 1.5;
+}
+@keyframes p-tag{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
+.hero-btn1{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #f4ca4c, 0 0 8px #f4ca4c;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    animation: btn1 2s ease;
+}
+@keyframes btn1{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;  
+    }
+}
+.hero-btn2{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #f4ca4c, 0 0 8px #f4ca4c;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    animation: btn2 2s ease;
+}
+@keyframes btn2{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;  
+    }
+}
+.hero-btn1:hover, .hero-btn2:hover{
+    border: 1px solid #231349;
+    background: #231349;
+    transition: 0.5s;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    .text-box p{
+        font-size: 13px
+    }
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+/*end of the "welcome to icof" p-tag and buttuns*/
+
+
+
+
+
+
+
+/*the start of the encouraging tab*/
+.wrapper3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    border: none;
+    background-image: linear-gradient(rgba(102, 96, 96, 0.7),rgba(253, 253, 255, 0.7)),url(images/icof-tran-.PNG);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+.tile {
+  margin: 0;
+  height: 400px; 
+  margin: 40px auto; /* Centers the tile horizontally with some vertical margin */
+  padding: 40px; 
+  border-radius: 8px;
+  background: transparent;
+  display: flex;
+  margin-bottom: 12px;
+  text-overflow: hidden;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  }
+
+.tile h2 {
+    color: #333;
+    padding: 5px;
+    border-left: 3px solid #f4ca4c;
+    margin-right: 20px;
+    font-size: 64px;
+    margin-left: 20px; 
+}
+.tile p {
+  font-size: 1.2em;
+  line-height: 1.9;
+  margin-top: 5px;
+  margin-left: 40px; 
+  color: #333;
+}
+@media (max-width: 768px) {
+  .tile {
+    width: 95%; 
+    height: 40vh; 
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .tile h2 {
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  .tile p {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-top: 10px; 
+  }
+}
+@media (max-width: 480px) {
+  .tile {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .tile h2 {
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  .tile p {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-top: 10px; 
+  }
+  
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+
+/*the end of the encouraging tab*/
+
+
+
+
+
+/*the start of the 'why choose icof' tab*/
+
+.whychooseicof{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    background-image: linear-gradient(rgba(253, 253, 255, 0.7),rgba(253, 253, 255, 0.7));
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sections{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 210px;
+    margin: 20px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    align-items: center;
+    border: 1px solid #f4ca4c; 
+  }
+
+.texts h1{
+    font-size: 33px;
+    padding: 5px 10px;
+    text-align: center;
+    color: #333;
+    border-left: 2px solid #f4ca4c;
+}
+.texts p{
+    color: #333;
+    text-align: center;
+    margin: 0 20px 0 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+}
+.sections img{
+    width: 340px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+
+@media (max-width: 700px){
+    .sections{
+        overflow: hidden; 
+        flex-wrap: wrap;
+        width: 90%;
+        height: 650px;
+    }
+    .sections img{
+        width: 100%;
+        height: 350px;
+        border-radius: 10px;  
+    }
+    .texts h1{
+        font-size: 33px;
+        padding: 10px 15px;
+        text-align: center;
+        color: #333;
+    }
+    .texts p{
+        color: #333;
+        text-align: center;
+    }
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+
+/*the end of the 'why choose icof' tab*/
+
+
+
+
+
+
+/* start of the courses section */
+
+.coursesvh{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-image: linear-gradient(rgba(253, 253, 255, 0.7),rgba(253, 253, 255, 0.7));
+}
+.courses-heading {
+    margin-top: 10px;
+    font-size: 50px;
+    border-bottom: 3px solid rgb(248, 198, 49);
+    color: #333;
+}
+.courses-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 10px;
+}
+.courses-container .courses-card{
+    position: relative;
+    width: 310px;
+    height: 400px;
+    background: rgba(253, 253, 255, 0.7);
+    border-radius: 20px;
+    border-top-left-radius: 70px;
+    overflow: hidden;
+}
+.courses-container .courses-card .courses-box{
+    position: absolute;
+    inset: 10px;
+    background: rgba(253, 253, 255, 0.7);
+    border-radius: 10px;
+    border:2px solid #f4ca4c, #235eac;
+}
+.courses-container .courses-card .courses-box .courses-icon{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: rgba(253, 253, 255, 0.7);
+    border-bottom-right-radius: 50%;
+    transition: 0.5s;
+}
+.courses-container .courses-card:hover .courses-box .courses-icon{
+    width: 100%;
+}
+.courses-container .courses-card .courses-box .courses-icon::before{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-top-left-radius: 30px;
+    box-shadow: -5px -5px 0 5px rgba(253, 253, 255, 0.7);
+}
+.courses-container .courses-card .courses-box .courses-icon::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-top-left-radius: 30px;
+    box-shadow: -5px -5px 0 5px #fdfdffb3;
+}
+.courses-container .courses-card .courses-box .courses-icon .courses-iconbox{
+    position: absolute;
+    inset: 10px;
+    background: #253eac;
+    border-radius: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.courses-container .courses-card .courses-box .courses-icon .courses-iconbox ion-icon{
+    font-size: 4em;
+    color: #fdfdffb3;
+    --ionicon-stroke-width: 20px;
+}
+.courses-container .courses-card .courses-box .courses-content{
+    position: absolute;
+    top: 150px;
+    padding: 20px;
+    text-align: center;
+}
+.courses-container .courses-card .courses-box .courses-content h3{
+    color: #333;
+    font-size: 1.25em;
+    font-weight: 700;
+    text-decoration: uppercase;
+    letter-spacing: 0.12em;
+}
+.courses-container .courses-card .courses-box .courses-content p{
+    color: #333;
+    font-size: 0.95em;
+    opacity: 0.75;
+    margin: 0 0 10px;
+}
+.courses-container .courses-card .courses-box .courses-content a{
+    background: var(--clr);
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: .5s;
+}
+.courses-container .courses-card .courses-box .courses-content a:hover{
+    letter-spacing: 0.2em;
+}
+@media(max-width: 768px){
+    .courses-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 10px;
+    }
+    .courses-heading {
+        margin-top: 10px;
+        font-size: 30px;
+        border-bottom: 3px solid rgb(248, 198, 49);
+        color: #333;
+    }
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+
+
+
+/*end of the courses section*/
+
+
+
+
+
+
+
+
+/*the start of the research tabs*/
+
+.wrapper2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    background-image: linear-gradient(#fdfdffb3,#fdfdffb3);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.section{
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 450px;
+    margin: 20px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    align-items: center;
+    
+  }
+
+.text h1{
+    font-size: 53px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #333;
+}
+.text p{
+    color: #333;
+    text-align: center;
+}
+.section img{
+    width: 140%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.hero-btn3{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border:2px solid #f4ca4c;
+    padding: 12px 35px;
+    font-size: 17px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+.hero-btn3:hover{
+    background-color: #231349;
+    letter-spacing: 1px;
+    color: #fff;
+}
+@media (max-width: 700px){
+    .section{
+        overflow: hidden; 
+        flex-wrap: wrap;
+        width: 90%;
+        height: 650px;
+    }
+    .section img{
+        width: 100%;
+        height: 350px;
+        border-radius: 10px;  
+    }
+    .text h1{
+        font-size: 33px;
+        padding: 10px 15px;
+        text-align: center;
+        color: #333;
+    }
+    .text p{
+        color: #333;
+        text-align: center;
+    }
+    .hero-btn3{
+        margin-left: 40px;
+        margin-top: 5px; 
+        width: 200px; 
+        
+    }
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+
+/* the end of the research tabs*/
+
+
+
+
+
+/* start of the heading tab*/
+.compusvh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(253, 253, 255, 0.7),rgba(253, 253, 255, 0.7));
+    background-position: center;
+    background-size: cover;
+}
+.compusvh .compus-heading {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 50px;
+    border-bottom: 1px solid rgb(248, 198, 49);
+    color: #333;
+}
+@media (max-width:768px){
+    .compusvh .compus-heading{
+        font-size: 30px;
+    }
+}
+@media (max-width:468px){
+    .compusvh .compus-heading{
+        font-size: 18px;
+    }
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+/*the end of the heading tab*/
+
+
+
+
+
+ /*the start of the campus tab*/ 
+
+.comp-body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(253, 253, 255, 0.7),rgba(253, 253, 255, 0.702));
+    
+}
+.comp-wrapper{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+.comp-wrapper .comp-image{
+    position: relative;
+    width: 100%;
+    height: 240px;
+    border-radius: 15px;
+    background: url(images/icof-b-b.JPEG);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+}
+.comp-wrapper .comp-image::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    border-radius: 50%;
+    bottom: 0;
+    right: 53%;
+    box-shadow: 10px 10px 0 #fdfdffb3;
+}
+.comp-wrapper .comp-content{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    border:2px solid #235eac;
+    border-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+.comp-wrapper .comp-content .comp-name{
+    position: absolute;
+    height: 80px;
+    width: 50%;
+    backdrop-filter: blur(5px);
+    top: -90px;
+    right: 0;
+    border-top: 10px solid #fff;
+    border-left: 10px solid #fff;
+    border-top-left-radius: 25px;
+}
+.comp-wrapper .comp-content .comp-name::before{
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    background: transparent;
+    border-radius: 50%;
+    right: 0;
+    
+
+}
+.comp-wrapper .comp-content .comp-name::after{
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    backdrop-filter: blur(1px);
+    border-radius: 50%;
+    bottom: 0;
+    left:-25px;
+    
+
+}
+.comp-wrapper .comp-content .comp-name a{
+    border: 2px solid #f4ca4c;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 15px;
+    display: block;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.comp-wrapper .comp-content .comp-name a:hover{
+    background-color: #231349;
+    transition: .5s;
+}
+.comp-wrapper .comp-content .comp-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+}
+.comp-wrapper .comp-content .comp-text p{
+    color: #333;
+    font-size: 14px;
+}
+@media(max-width: 700px){
+    .comp-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+         
+    }
+    .comp-wrapper .comp-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        
+    }
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+/*the end of the campus tab*/
+
+
+
+
+
+
+/*take your next step*/
+
+
+.wrapper5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    background-image:url(images/icof-students.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.tile11 {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.tile11 h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 70px;
+
+  }
+
+.take-your-next-tab {
+    display: flex;  
+}
+.take-your-next-step {
+    width: 200px;
+    height: 30px;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-right: 30px;
+    background: transparent;
+    border: 2px solid #f4ca4c;
+    color: white;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+
+  }
+
+.take-your-next-step:hover {
+    background-color: #231349;
+    transition: .5s;
+}
+ @media(max-width: 700px){
+    .tile11 h1{
+        font-size: 45px;
+    }
+    .tile11 .take-your-next-tab {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        margin: 20px ;
+        text-decoration: none;
+    }
+    .take-your-next-step{
+       margin-bottom: 20px;
+    }
+ }
+ @media(max-width: 480px){
+    .tile11 h1{
+        font-size: 25px;
+    }
+ } 
+ @media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+ /*take your next step*/
+
+
+
+
+
+
+
+
+
+
+
+/*start of the international tab*/
+
+
+.internavh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 80vh;
+    background-image: linear-gradient(rgba(253, 253, 255, 0.7),rgba(253, 253, 255, 0.702),url(images/icof-4.png));
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.interna-card{
+    position: relative;
+    margin: 10px 10px;
+}
+.interna-card-img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1.25rem;
+    border: 0.5rem solid #235eac;
+    overflow: hidden;
+    position: relative;
+}
+.interna-card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.interna-tag{
+    width: 12.5rem;
+    height: 3.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #235eac;
+    border-top: 0.5rem solid #235eac;
+    border-left: 0.5rem solid #235eac;
+    border-top-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    padding: 0.3125rem;
+}
+
+.curve-one, .curve-two{
+    width: 1.25rem;
+    height: 1.25rem;
+    content: "";
+    position: absolute;
+}
+
+.interna-tag > a{
+    box-shadow: 0 0 8px #235eac, 0 0 8px #235eac;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+    border-radius: 0.3125rem;
+    text-decoration: none;
+}
+.interna-tag > a:hover{
+    background: #231349;
+    transition: .5s;
+}
+@media(max-width:760px){
+    .interna-card-img{
+        width: 20rem;
+        height: 20rem;
+        border-radius: 1.25rem;
+        border: 0.5rem solid #235eac;
+        overflow: hidden;
+        position: relative;
+    }
+
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+/* end of the international tab*/
+
+
+
+
+
+/*the start of the partners heading */
+
+.partnersvh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(37, 62, 172),rgba(0, 0, 0, 0.808));
+    background-position: center;
+    background-size: cover;
+}
+.partnersvh .partners-heading {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 50px;
+    border-bottom: 1px solid rgb(248, 198, 49);
+    color: #fff;
+}
+@media (max-width:768px){
+    .partnersvh .partners-heading{
+        font-size: 30px;
+    }
+}
+@media (max-width:468px){
+    .partnersvh .partners-heading{
+        font-size: 18px;
+    }
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+/*end of the partners heading*/
+
+
+
+
+/*start of the partners slide*/
+
+.slider{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.808);
+    height: var(--height);
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent,  10% 90%, transparent);
+}
+.slider .list{
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+}
+.slider .list .item{
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autorun 20s linear infinite;
+    animation-delay: calc( (20s / var(--quantity)) * (var(--position) - 1));
+}
+.slider .list .item img{
+    width: 180px;
+    height: 70px;
+}
+@keyframes autorun{
+    from{
+        left:100%;
+    }
+    to{
+        left: calc(var(--width) * -1);
+    }
+    
+}
+@media(max-width:480px){
+    .slider .list .item img{
+        width: 120px;
+        height: 50px;
+    }
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+
+  
+/*end of the partner slide */
+
+
+
+
+
+
+/*start of the footer*/
+
+.footervh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.808),rgb(50, 64, 133), rgb(0,0,0));
+    background-position: center;
+    background-size: cover;
+    bottom: 0;
+}
+
+.footer-row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.footer-col:nth-child(2), .footer-col:nth-child(3){
+    flex-basis: 20%;
+}
+.footer-logo{
+    width: 200px;
+    margin-bottom: 30px;
+}
+.footer-col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    color: #fff;
+    border-bottom: 1px solid #f4ca4c;
+}
+.footer-col h4{
+    width: fit-content;
+    margin: 20px 20px 20px 0;
+    position: relative;
+    color: #fff;
+    
+}
+.footer-col p, .footer-col a{
+    color: #fff;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #f4ca4c;
+    margin: 20px 0;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form ion-icon{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    font-size: 17px;
+    border: 0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer; 
+    margin-right: 10px;
+}
+form button ion-icon{
+    font-size: 16px;
+    color: #fff;
+   
+}
+.social-icons a ion-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #FFF;
+    background: transparent;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.copyright{
+    text-align: center;
+    color: #fff;
+}
+@media(max-width:760px){
+    .footervh{
+        bottom: unset;
+    }
+    .footer-col{
+        flex-basis: 100%;
+        
+    }
+        .footer-col:nth-child(2), .footer-col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+}
+/*end of the footer*/
+
+</style>
+<body>
+    <!--the "welcome to icof, h1, p-tag and button" tab starts here-->
+    <div class="ourpartnervh">
+        <div class="ourpartner">
+            <ul>
+                <li>
+                    <h3 class="ourpartner">tel: 123 456 7890</h3>
+                    <h3 class="ourpartner">mon-fri 8am - 5pm</h3>
+                    <h3 class="ourpartner">Email: icof@gmail.com</h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="header">
+
+        
+        <!--the nav starts here-->
+        <nav>
+            <div class="logo">
+                <img src="images/VLCA4144.PNG" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#about">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="v-chanceller.html">Vice Chancellor</a>
+                        <a href="chanceller.html">ICOF CSU Chancellor</a>
+                        <a href="council.html">ICOF CSU Council</a>
+                        <a href="A-office.html">Academic Office</a>
+                        <a href="dean-of-students.html">Dean of Students</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#students">Students</a>
+                    <div class="dropdown-content">
+                        <a href="a-calendar.html">Academic Calendar</a>
+                        <a href="login.php">E-Learning</a>
+                        <a href="./admin/login.php">Lecturer</a>
+                        <a href="accommodation.html">Accommodation System</a>
+                        <a href="student-life.html">Student Life</a>
+                      
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="schools.html">Schools</a>
+                </li>
+                <li class="dropdown">
+                    <a href="./icof-library/Library_Section.html">Library</a>
+                </li>
+             
+                <li><a href="./icof/index.php">Apply</a></li>
+            </ul>
+            <!-- Hamburger Icon for Mobile View -->
+            <button class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+
+        <!--the nav ends here-->
+
+
+
+        <!--the news tab starts here-->
+        <div class="news-ribbon">
+            <ul>
+                <li><button class="UNI-NEWS">TRENDING NEWS</button></li>
+                <li><a href="#">New Research Grants Available for Students</a></li>
+                <li><a href="#">University's Annual Sports Day Announced</a></li>
+                <li><a href="#">Deadline for Scholarship Applications Approaching</a></li>
+                <li><a href="#">Join the Student Wellness Program</a></li>
+                <li><a href="#">New Course Offerings for Spring Semester</a></li>
+                <li><a href="#">Campus Health and Safety Updates</a></li>
+            </ul>
+        </div>
+
+        <!--the news tab ends here-->
+
+
+
+
+     <!--the "welcome to icof, h1, p-tag and button" tab starts here-->   
+    <div class="text-box">
+        <h1>WELCOME TO ICOF GLOBAL UNIVERSITY</h1>
+        <P>We are a 21st century movement of Christian Colleges and Universities
+             working together to provide quality education
+             to Christians who cannot afford traditional career development approaches
+              for acquiring professional skills which can be used in government 
+              and private sector jobs around the globe.</P>
+        <a href="about.html" class="hero-btn1">Read More</a>
+        <a href="./icof/index.php" class="hero-btn2">Apply Now</a>
+        
+    </div>    
+    </section>
+     <!--the "welcome to icof, h1, p-tag and button" tab ends here--> 
+
+
+
+
+    <!--start of the encouraging tab-->
+
+    <div class="wrapper3">
+        <div class="tile">
+            <h2>Immerse Yourself<br> In The ICOF <br>Experience.</h2>
+            
+    
+            <P>At the heart of our mission is a steadfast commitment to 
+                building a student-centered community one where every 
+                individual feels valued, heard, and empowered. We strive
+                 to create an environment that nurtures the academic, career,
+                  and personal development of all students by offering comprehensive 
+                  support services, engaging learning experiences, and inclusive resources.
+
+                
+                  
+                 
+            </p>
+        </div>
+    </div>
+    
+    <!--the end of the encouraging tab-->
+
+
+
+    <!--the start of the 'why choose icof' tab-->
+
+    <div class="whychooseicof">
+        <h2 class="courses-heading">Why Choose ICOF-CSU</h2>
+        
+
+        <div class="sections">
+            <img src="vector/about-icof.png" alt="">
+            <div class="texts">
+                <h1>Experienced faculty and modern facilities</h1>
+                <p>Our faculty members are industry experts and Experienced 
+                    educators dedicated to mentoring students. the University
+                    also boasts state-of-art facilities,including well-equipped
+                    Libraries, laboratories, and online learning platforms.
+                </p>
+            </div>
+             
+        </div>
+
+        <div class="sections">
+           <img src="vector/student-meet.png" alt=""> 
+            <div class="texts">
+                <h1>Strong connections and internship opportunities</h1>
+                <p>We bridge the gap between education and employment by offering internship
+                    opportunities, career counseling , and partnerships with leading organizations. 
+                    graduates of icof Universityare highly sought after in the job market.
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="sections">
+            <img src="vector/student-assesment.png" alt="">
+            <div class="texts">
+                <h1>Affordable tuition and Scholarships</h1>
+                <p>quality education should be accessible. ICOF-CSU offers affordable
+                     tuition fees and Scholarship programs to support students financially 
+                     making higher education more attainable.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--the end of the 'why choose icof' tab-->
+
+
+
+
+
+     <!--the courses tab starts here-->
+    
+        
+       <div class="coursesvh">
+            <h2 class="courses-heading">Our Courses</h2>
+            <div class="courses-container">
+                
+                <div class="courses-card" style="--clr:#235eac;">
+                    <div class="courses-box">
+                        <div class="courses-icon">
+                            <div class="courses-iconbox"><ion-icon name="person-outline"></ion-icon></div>
+                        </div>
+                        <div class="courses-content">
+                            <h3>Diploma</h3>
+                            <p>IOCF Global University is one of the world's most
+                                prestigious destinations for undergraduate
+                            education in a wide range of studies. </p>
+                            <a href="school_diploma.html">View Courses</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-card" style="--clr:#235eac;">
+                    <div class="courses-box">
+                        <div class="courses-icon">
+                            <div class="courses-iconbox"><ion-icon name="person-outline"></ion-icon></div>
+                        </div>
+                        <div class="courses-content">
+                            <h3>Degree</h3>
+                            <p>Ofering a diverse suite of Degrees and programs,
+                                our Degree School prepares students to seek truth
+                                and knowledge in their academic endeavors.
+                            </p>
+                            <a href="school_degree.html">View Courses</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-card" style="--clr: #235eac;">
+                    <div class="courses-box">
+                        <div class="courses-icon">
+                            <div class="courses-iconbox"><ion-icon name="person-outline"></ion-icon></div>
+                        </div>
+                        <div class="courses-content">
+                            <h3>PhD</h3>
+                            <p>ICOF PhD programs are academically rich and porvide 
+                                the experience that propel students to succeed in 
+                                their careers.
+                            </p>
+                            <a href="school_PhD.html">View Courses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--the courses tab ends here-->
+
+    
+
+    
+    <!--the start of the research tabs-->
+
+    <div class="wrapper2">
+        <div class="section">
+            <img src="images/about-img.svg" alt="">
+            <div class="text">
+                <h1>Research, Center, and Institutes</h1>
+                <p>ICOF researchers and thought leaders are tackling the most 
+                    pressing challenges facing humanity, including health and 
+                    medical issues, economics, cybersecurity, women's leaadership,
+                    artificial intelligence, machine learning and many more.
+                </p>
+                
+                <a href="contact.html" class="hero-btn3">Visit Research Center</a>
+            </div>
+        </div>
+    </div>
+
+    <!--the end of the research tabs-->
+
+
+
+    <div class="compusvh">
+        <h2 class="compus-heading">Our Compus</h2>
+   </div>
+
+
+
+    <!--THE START OF THE CAMPUS TAB-->
+    
+    <div class="comp-body">
+        <div class="comp-wrapper">
+            <div class="comp-image"></div>
+            <div class="comp-content">
+                <div class="comp-name">
+                    <a href="video-tour.html">VIDEO TOUR</a>
+                </div>
+                <div class="comp-text">
+                    <h3>OUR CAMPUS</h3>
+                    <p>Take a video tour for a digital experience.</p>
+                </div>
+            </div>
+        </div>
+        <div class="comp-wrapper">
+            <div class="comp-image"></div>
+            <div class="comp-content">
+                <div class="comp-name">
+                    <a href="partners.html">OUR PARTNERS</a>
+                </div>
+                <div class="comp-text">
+                    <h3>ICOF ZAMBIA</h3>
+                    <p>ICOF partnerships with other Universities and Colleges in Zambia</p>
+                </div>
+            </div>
+        </div>
+        <div class="comp-wrapper">
+            <div class="comp-image"></div>
+            <div class="comp-content">
+                <div class="comp-name">
+                    <a href="contact.html">VISIT US</a>
+                </div>
+                <div class="comp-text">
+                    <h3>MAIN OFFICE</h3>
+                    <p>Get us a visit at the main office. </p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <!--THE END OF THE CAMPUS TAB-->
+    
+
+
+
+<!--take your next step-->
+
+   <div class="wrapper5">
+    <div class="tile11">
+        <h1>TAKE YOUR NEXT STEP</h1>
+        <div class="take-your-next-tab">
+            <a class="take-your-next-step" href="contact.html">REQUEST INFORMATION</a>
+          <a class="take-your-next-step" href="video-tour.html">GUEST'S TOUR</a>
+          <a class="take-your-next-step" href="./icof/index.php">APPLY NOW</a>
+        </div>
+    </div>
+   </div>
+
+  <!--take your next step-->
+
+
+
+   <!--THE START OF THE INTERNATIONAL TAB-->
+
+   <div class="compusvh">
+    <h2 class="compus-heading">Our Leadership</h2>
+   </div>
+
+   <div class="internavh">
+        <div class="interna-container">
+            <div class="interna-card">
+                <div class="interna-card-img">
+                    <img src="images/icof-2.png" alt="">
+                </div>
+                <div class="interna-tag">
+                    <a href="council.html">ZAMBIAN LEADERSHIP</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="interna-container">
+            <div class="interna-card">
+                <div class="interna-card-img">
+                    <img src="images/icof-2.png" alt="">
+                </div>
+                <div class="interna-tag">
+                    
+            </div>
+        </div>
+
+
+        <div class="interna-container">
+            <div class="interna-card">
+                <div class="interna-card-img">
+                    <img src="images/icof-2.png" alt="">
+                </div>
+                <div class="interna-tag">
+                    
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <!--END OF THE INTERNATION TAB-->
+
+
+    
+
+        <!--THE START OF THE PARTNERS TAB-->
+    
+    <div class="slider" style="
+            --width: 100px;
+            --height: 70px;
+            --quantity: 4;
+            
+        ">
+            
+            <div class="list">
+                
+                <div class="item" style="--position: 1"><img src="images/VLCA4144.PNG" alt=""></div>
+                <div class="item" style="--position: 2"><img src="images/VLCA4144.PNG" alt=""></div>
+                <div class="item" style="--position: 3"><img src="images/VLCA4144.PNG" alt=""></div>
+                <div class="item" style="--position: 4"><img src="images/VLCA4144.PNG" alt=""></div>
+               
+            </div>
+        </div>
+
+        <!--THE END OF THE PARTNERS TAB-->
+
+
+
+
+
+       <!--the footer-->
+
+        <div class="footervh">
+        
+            <div class="footer-row">
+                <div class="footer-col">
+                    <img src="images/VLCA4144.PNG" class="footer-logo">
+                    <p>We are a 21st century movement of Christian Colleges
+                         and Universities working together to provide quality
+                          education</p>
+                </div>
+                <div class="footer-col">
+                    <h3>OFFICE</h3>
+                    <p>Olympia Extension Plot Number 1789/9</p>
+                    <p>P.O. BOX 34490 LUSAKA, ZAMBIA </p>
+                    <a href="cm@icofafrica.net" class="email-id">cm@icofafrica.net</a>
+                    <h4>+260 12 345 6789</h4>
+                </div>
+                <div class="footer-col">
+                    <h3>LINKS</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="student-life.html">Student life</a></li>
+                        <li><a href="schools.html">Schools</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>NEWSLETTER</h3>
+                    <form>
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" placeholder="Enter email id" required>
+                        <button type="submit"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+                    </form>
+                    <div class="social-icons">
+                        <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </div>
+                </div>                
+            </div>
+            <p class="copyright">ICOF GLOBAL UNIVERSITY &copy; 2025 - All Rights Reserved</p> 
+        </div>
+
+       <!--the footer ends-->
+
+
+
+
+<!--javascript for toggle menu-->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu");
+        
+        menuToggle.addEventListener("click", function() {
+            menu.classList.toggle("open");
+        });
+    });
+</script>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>
+<!--the END -->
